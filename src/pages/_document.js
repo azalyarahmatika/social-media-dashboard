@@ -6,7 +6,7 @@ export default function Document() {
       <Head>
         <link rel="icon" href="/images/favicon-32x32.png" />
       </Head>
-      <body className="my-10 font-inter w-screen h-screen overflow-y-auto overflow-x-hidden flex justify-center items-center custom_gradient">
+      <body className="my-16 font-inter w-screen h-screen overflow-y-auto overflow-x-hidden flex justify-center items-center custom_gradient">
         <Main />
         <NextScript />
       </body>

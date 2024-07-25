@@ -12,6 +12,10 @@
   );
 }
 
+#toggle:checked ~ label div.toggle-circle {
+  @apply translate-x-4;
+}
+
 @font-face {
   font-family: 'Inter';
   font-style: normal;
