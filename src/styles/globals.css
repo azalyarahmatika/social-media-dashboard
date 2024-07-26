@@ -2,13 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
-.custom_gradient {
+.custom_gradient_dark {
   background: linear-gradient(
     to bottom,
     #20222F 0%,
     #20222F 33.33%,
     #1D202B 33.33%,
     #1D202B 100%
+  );
+}
+
+.custom_gradient_light {
+  background: linear-gradient(
+    to bottom,
+    #F8F9FD 0%,
+    #F8F9FD 33.33%,
+    #FFFFFF 33.33%,
+    #FFFFFF 100%
   );
 }
 

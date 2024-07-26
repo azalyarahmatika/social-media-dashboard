@@ -38,7 +38,7 @@ function OverviewCard() {
         <p>Loading...</p>
       ) : (
         overview.map((element, index) => (
-          <div key={index} className="w-60 rounded-md bg-dark_desaturated_blue_card_bg text-white p-6">
+          <div key={index} className="w-60 rounded-md dark:bg-dark_desaturated_blue_card_bg bg-light_grayish_blue_card_bg text-white p-6 hover:dark:bg-[#304463] hover:bg-gray-200">
             <div className="">
               <div className="flex justify-between items-center w-full">
                 <p className="text-xs text-desaturated_blue_text font-semibold">{element.metric}</p>
@@ -49,7 +49,7 @@ function OverviewCard() {
                 />
               </div>  
               <div className="flex justify-between pt-6">
-                <p className="text-white_text text-3xl font-bold">{element.value}</p>
+                <p className="dark:text-white_text text-very_dark_blue_text text-3xl font-bold">{element.value}</p>
                 <div className="flex items-center gap-1">
                   <Image
                     src={element.isIncrease === true ? ArrowUp : ArrowDown}

@@ -46,7 +46,7 @@ function DashboardCard() {
       ) : (
         data.map((element, index) => (
           <div key={index} className={classNames("rounded-md relative bg-red-700", `${mediaBorder[element.media]}`)}>
-            <div className="w-60 rounded-b-md relative top-1 bg-dark_desaturated_blue_card_bg text-white p-6 text-center">
+            <div className="w-60 rounded-b-md relative top-1 dark:bg-dark_desaturated_blue_card_bg bg-light_grayish_blue_card_bg dark:text-white text-very_dark_blue_text hover:bg-gray-200 p-6 text-center hover:dark:bg-[#304463]">
               <div className="flex items-center gap-2 justify-center">
                 <div>
                   <Image
@@ -55,7 +55,7 @@ function DashboardCard() {
                     className=""
                   />
                 </div>
-                <p className="text-xs text-desaturated_blue_text">{element.username}</p>
+                <p className="text-xs font-semibold text-dark_grayish_blue_text">{element.username}</p>
               </div>
               <p className="text-5xl font-bold pt-5 pb-1">{element.followers}</p>
               <p className="text-[10px] text-desaturated_blue_text tracking-[0.25em]">{element.media === "youtube" ? "SUBSCRIBER" : "FOLLOWERS"}</p>
@@ -65,7 +65,7 @@ function DashboardCard() {
                   alt="Arrow"
                   className="w-2"
                 />
-                <p className={classNames("text-[10px] font-bold", `${element.isIncrease ? 'text-lime_green' : 'text-bright_red'}`)}>{element.followersToday} Today</p>
+                <p className={classNames("text-[10px] font-bold dark:dark_grayish_blue_text", `${element.isIncrease ? 'text-lime_green' : 'text-bright_red'}`)}>{element.followersToday} Today</p>
               </div>
             </div>
           </div>
