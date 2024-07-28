@@ -22,11 +22,13 @@ export default function Home() {
   }, [theme]);
 
   return (
-    <div className={`py-12 font-inter flex justify-center items-center ${theme ? "custom_gradient_dark" : "custom_gradient_light"}`}>
-      <div>
-        <Dashboard toggleDarkMode={toggleDarkMode} />
+    <div className="h-full">
+      <div className={`${theme ? "bg-[#20222F]" : "bg-[#F8F9FD]"} absolute h-64 w-full top-0 rounded-b-3xl`}></div>
+
+      <div className={`xl:h-screen z-10 py-12 font-inter flex flex-col justify-center items-center ${theme ? "bg-[#1D202B]" : "bg-white"}`}>
+        <Dashboard theme={theme} toggleDarkMode={toggleDarkMode} />
         <Overview />
       </div>
-    </div>
+    </div>  
   );
 }

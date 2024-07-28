@@ -1,9 +1,9 @@
 import DashboardTitle from "./DashboardTitle";
 import DashboardCard from "./DashboardCard";
 
-function Dashboard({toggleDarkMode}) {
+function Dashboard({theme, toggleDarkMode}) {
   return (
-    <div>
+    <div className="relative z-10">
       <div className="flex pb-8">
         <DashboardTitle toggleDarkMode={toggleDarkMode} />
       </div>

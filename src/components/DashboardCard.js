@@ -40,13 +40,13 @@ function DashboardCard() {
   }
 
   return (
-    <div className="container grid grid-cols-4 gap-6 font-inter w-fit">
+    <div className="container grid xl:grid-cols-4 lg:grid-cols-2 gap-6 font-inter w-fit">
       {isLoading ? (
         <p>Loading...</p>
       ) : (
         data.map((element, index) => (
           <div key={index} className={classNames("rounded-md relative bg-red-700", `${mediaBorder[element.media]}`)}>
-            <div className="w-60 rounded-b-md relative top-1 dark:bg-dark_desaturated_blue_card_bg bg-light_grayish_blue_card_bg dark:text-white text-very_dark_blue_text hover:bg-gray-200 p-6 text-center hover:dark:bg-[#304463]">
+            <div className="xl:w-60 lg:w-80 md:w-96 w-80 rounded-b-md relative top-1 dark:bg-dark_desaturated_blue_card_bg bg-light_grayish_blue_card_bg dark:text-white text-very_dark_blue_text hover:bg-gray-200 p-6 text-center hover:dark:bg-[#304463]">
               <div className="flex items-center gap-2 justify-center">
                 <div>
                   <Image

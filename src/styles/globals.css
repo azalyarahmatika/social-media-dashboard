@@ -15,9 +15,9 @@
 .custom_gradient_light {
   background: linear-gradient(
     to bottom,
-    #F8F9FD 0%,
-    #F8F9FD 33.33%,
-    #FFFFFF 33.33%,
+    #F8F9FD 0px,
+    #F8F9FD 260px,
+    #FFFFFF 260px,
     #FFFFFF 100%
   );
 }

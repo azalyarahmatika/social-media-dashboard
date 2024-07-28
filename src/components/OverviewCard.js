@@ -33,12 +33,12 @@ function OverviewCard() {
   }
 
   return (
-    <div className="container grid grid-cols-4 gap-6 font-inter w-fit">
+    <div className="container grid xl:grid-cols-4 lg:grid-cols-2 gap-6 font-inter w-fit">
       {isLoading ? (
         <p>Loading...</p>
       ) : (
         overview.map((element, index) => (
-          <div key={index} className="w-60 rounded-md dark:bg-dark_desaturated_blue_card_bg bg-light_grayish_blue_card_bg text-white p-6 hover:dark:bg-[#304463] hover:bg-gray-200">
+          <div key={index} className="xl:w-60 lg:w-80 md:w-96 w-80 rounded-md dark:bg-dark_desaturated_blue_card_bg bg-light_grayish_blue_card_bg text-white p-6 hover:dark:bg-[#304463] hover:bg-gray-200">
             <div className="">
               <div className="flex justify-between items-center w-full">
                 <p className="text-xs text-desaturated_blue_text font-semibold">{element.metric}</p>
