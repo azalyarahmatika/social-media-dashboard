@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import Dashboard from "@/components/Dashboard";
 import Overview from "@/components/Overview";
 import { useState, useEffect } from "react";
+import Footer from "@/components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -28,6 +29,7 @@ export default function Home() {
       <div className={`min-h-screen z-10 py-12 font-inter flex flex-col justify-center items-center ${theme ? "bg-[#1D202B]" : "bg-white"}`}>
         <Dashboard theme={theme} toggleDarkMode={toggleDarkMode} />
         <Overview />
+        <Footer theme={theme}/>
       </div>
     </div>  
   );
