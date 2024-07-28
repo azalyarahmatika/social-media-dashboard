@@ -33,7 +33,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Github Pages](https://github.com/azalyarahmatika/social-media-dashboard-with-theme-switcher)
-- Live Site URL: [Vercel](https://your-live-site-url.com)
+- Live Site URL: [Vercel](https://social-media-dashboard-with-theme-switcher-topaz.vercel.app/)
 
 ## My process
 
